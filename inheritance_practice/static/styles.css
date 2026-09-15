@@ -1,0 +1,9 @@
+div{
+    background-color:lightblue;
+    color:navy;
+    border: 3px solid black;
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    margin: auto;
+}

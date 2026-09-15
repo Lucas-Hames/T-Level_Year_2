@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "static/styles.css">
+    </head>
+    <body>
+        <div>
+            <h1>Welcome Back</h1>
+            <h2>{{web_uname}} {{web_pwd}}</h2>
+            <form action = "{{url_for('delete_user')}}" method = "post">
+                <input type = "submit" value = "Delete">
+            </form>
+            <form action = "{{url_for('change_password')}}" method = "post">
+                <input type = "submit" value = "Change Password">
+            </form>
+        </div>
+    </body>
+</html>
