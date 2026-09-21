@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div id = "basestyle">
+    <h1>Register</h1>
+    <form action = "{{url_for('register_user')}}" method = "post">
+        <label for = "Uname">User Name:</label><br>
+        <input type = "text" id = "uname" name = "uname" value = ""><br>
+        <label for = "Pwd">Password:</label><br>
+        <input type = "text" id = "pwd" name = "pwd" value = ""><br>
+        <input type = "submit" value = "Register">
+    </form>
+</div>
+{% endblock %}
