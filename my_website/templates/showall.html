@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div id = "basestyle"> 
+    <form action = "{{url_for('return_to_welcome')}}" method = "post">
+        {% for x in web_all_users %}
+        <h2>Name: {{x[0]}}<br></h2>
+        <h2>Email: {{x[1]}}<br></h2>
+        <h2>Password: {{x[2]}}<br></h2>
+        <h2>Age: {{x[3]}}<br></h2>
+        <h2>Website: {{x[4]}}<br></h2>
+        <h2>Date of Birth: {{x[5]}}<br></h2>
+        <h2>Gender: {{x[6]}}<br></h2>
+        <h2>Languages: {{x[7]}}<br></h2>
+        <input type = "submit" value = "Return">
+        <input type = "hidden" id = "uname" name = "uname" value = "{{x[0]}}">
+        {% endfor %}
+    </form>
+</div>
+{% endblock %}

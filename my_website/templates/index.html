@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<script src = "/static/change_background.js"></script>
+<div id = "basestyle">
+    <h1>Login Form {{webvar}}</h1>
+    <form action = "{{url_for('login')}}" method = "post">
+        <label for = "Uname">Username:</label><br>
+        <input type = "text" id = "uname" name = "uname" value = "" onmouseover = "changeBG('uname')" onmouseout = "restoreBG('uname')"><br>
+        <label for = "Pwd">Password:</label><br>
+        <input type = "password" id = "pwd" name = "pwd" value = "" onmouseover = "changeBG('pwd')" onmouseout = "restoreBG('pwd')"><br>
+        <input type = "submit" value = "Submit">
+    </form>
+    <form action = "{{url_for('register')}}">
+        <input type = "submit" value = "Register">
+    </form>
+</div>
+{% endblock %}
