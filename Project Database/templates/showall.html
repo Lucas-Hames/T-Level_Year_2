@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            {% for x in web_all_data %}
+            <h1>PROJECT {{x[0]}}</h1>
+            <h2>Type: {{x[8]}}</h2>
+            <h2>Scheduled Start Date: {{x[4]}}</h2>
+            <h2>Actual Start Date: {{x[5]}}</h2>
+            <h2>Number of Trades People: {{x[6]}}</h2>
+            <h2>Customer: {{x[10]}} {{x[11]}}</h2>
+            <h2>Customer Contact: {{x[12]}}</h2>
+            <h2>Manager: {{x[14]}} {{x[15]}}<br></h2>
+            <input type = "submit" value = "Edit Project">
+            {% endfor %}
+        </form>
+    </body>
+</html>

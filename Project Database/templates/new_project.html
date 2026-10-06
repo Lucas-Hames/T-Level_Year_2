@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>New Project</h1>
+        <h1>{{msg}}<h1>
+        <form action = "{{url_for('create_project')}}" method = "POST">
+            <label for = "ProjectType">Project Type:</label><br>
+            <input type = "radio" id = "project_type" name = "project_type" value = "1"><label>Kitchen</label><br>
+            <input type = "radio" id = "project_type" name = "project_type" value = "2"><label>Bathroom</label><br>
+            <label for = "Customer">Customer:</label><br>
+            <input type = "text" id = "customer" name = "customer" value = ""><br>
+            <label for = "Manager">Manager:</label><br>
+            <input type = "text" id = "manager" name = "manager" value = ""><br>
+            <label for = "PlannedDate">Planned Start Date:</label><br>
+            <input type = "date" id = "planned_date" name = "planned_date" value = ""><br>
+            <label for = "ActualDate">Actual Start Date:</label><br>
+            <input type = "date" id = "actual_date" name = "actual_date" value = ""><br>
+            <label for = "NoTradesPpl">Number of Trades People:</label><br>
+            <input type = "number" id = "no_trades_ppl" name = "no_trades_ppl" value = ""><br>
+            <input type = "submit" value = "Create Project">
+        </form>
+    </body>
+</html>
